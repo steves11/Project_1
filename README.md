@@ -27,11 +27,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- A load balancer defends against distributed denial-of-service (DDoS) attacks. Load balancers directs traffic to ensure that network doesnt get overwhelmed from high traffic. The advanyage of having a jumpbox allows is that it as an extra layer of security, by allowing anyone who needs to make administrative first has to  log into the jumpbox first before being allowed to execute anything on the network.   
+- A load balancer defends against distributed denial-of-service (DDoS) attacks. Load balancers directs traffic to ensure that network doesnt get overwhelmed from high traffic. The advanyage of having a jumpbox allows is that it as an extra layer of security, by allowing anyone who needs to preform administrative task, first has to  log into the jumpbox first before being allowed to execute anything on the network.   
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Filebeat monitors for log files or places which you specify, collects log events, and forwards them to Elasticsearch or Logstash for indexing
+- Metricbeat- records all the metrics on operating systems and services on the server. Ex: CPU usages
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -70,8 +70,8 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The playbook implements the following tasks:
 - Install Docker.io and pip3
 - Increase the memory of vm change value 262144
--Install Downlaod and run conatainer
--Set published ports 5601:5601 9200:9200 5044:5044
+- Install Downlaod and run conatainer
+- Set published ports 5601:5601 9200:9200 5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
