@@ -4,7 +4,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Diagram/Networkdiagram.png)
+! [RED-TEAM Network Diamgram] (Diagrams/Networkdiagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -74,7 +74,7 @@ The playbook implements the following tasks:
 - Set published ports 5601:5601 9200:9200 5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-(Images/docker_ps_output.png)
+! [Docker_ps} (Images/docker_ps_output.png)
 
 
 ### Target Machines & Beats
