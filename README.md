@@ -27,7 +27,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly accessable, in addition to restricting traffic to the network.
-- A load balancer defends against distributed denial-of-service (DDoS) attacks. Load balancers directs traffic to ensure that network doesnt get overwhelmed from high traffic. The advanyage of having a jumpbox allows is that it as an extra layer of security, by allowing anyone who needs to preform administrative task, first has to  log into the jumpbox first before being allowed to execute anything on the network.   
+- A load balancer defends against distributed denial-of-service (DDoS) attacks. Load balancers directs traffic to ensure that network doesnt get overwhelmed from high traffic. The advantage of having a jumpbox allows is that it as an extra layer of security, by allowing anyone who needs access to perform administrative tasks, first has to  log into the jumpbox first before being allowed to execute anything on the network.   
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system traffic.
 - Filebeat monitors for log files or places which you specify, collects log events, and forwards them to Elasticsearch 
@@ -76,7 +76,7 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+!(Images/docker_ps_output.png)
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - 10.0.0.7 Web-1
