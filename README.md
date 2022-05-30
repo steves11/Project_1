@@ -97,7 +97,7 @@ SSH into the control node and follow the steps below:t
 - Update the cofnfigured files to include the private ip of the elk server. (change under elastic search and kibana)
 - Run the playbook, and navigate to elk-servers-publicip:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+
 - _Which file is the playbook? elk-install.yml metricbeat-playbook.yml filebeat-playbook.yml
 -  Where do you copy it? /etc/ansible
 - _Which file do you update to make Ansible run the playbook on a specific machine? /etc/ansible/hosts
